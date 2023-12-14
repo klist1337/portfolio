@@ -1,0 +1,12 @@
+.navbar-brand { 
+    font-size: 20px;
+    font-family: 'futura';
+}
+.custom-margins {
+    margin-left: 800px;
+}
+.nav-item {
+    margin-left: 40px;
+    font-family: 'futura';
+    font-size: 20px;
+}
