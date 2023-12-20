@@ -3,10 +3,19 @@
     font-family: 'futura';
 }
 .custom-margins {
-    margin-left: 800px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
+
 .nav-item {
     margin-left: 40px;
     font-family: 'futura';
     font-size: 20px;
+}
+
+.responsive {
+    font-family: 'futura';
+    font-size: 20px;
+    text-align: center;
 }

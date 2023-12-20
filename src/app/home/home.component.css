@@ -1,0 +1,21 @@
+.about-me {
+    margin-top: 200px;
+    margin-left: 500px;
+    font-family: 'futura';
+    font-size: x-large;
+    font-weight:lighter;
+    color: #828282
+}
+.responsive {
+    margin-top: 200px;
+    text-align: center;
+    font-family: 'futura';
+    font-size: x-large;
+    color:#828282
+}
+
+.description {
+    margin-left: 500px;
+    font-family: 'futura';
+    font-size: xx-large;
+}

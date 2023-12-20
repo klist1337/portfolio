@@ -1,0 +1,9 @@
+<div *ngIf="!isPhoneViewed ;else responsive">
+    <p class="about-me" >Hi there, i'm Dominique 👋</p>
+    <p class="description">Full Stack Developer , Future IA && Cybersecurity Specialist</p>
+</div>
+<ng-template #responsive>
+    <div>
+        <p class="responsive">Hi there, im Dominique 👋</p>
+    </div>
+</ng-template>

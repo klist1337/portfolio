@@ -1,4 +1,4 @@
-<nav class="navbar navbar-expand-lg navbar-light bg-light">
+<!-- <nav class="navbar navbar-expand-lg navbar-light bg-light">
     <a class="navbar-brand" href="#"> <img src="./assets/lion.svg" alt="lionIcon" width="70px">Assofi Ehouman Dominique</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor03" aria-controls="navbarColor03" aria-expanded="false" aria-label="Toggle navigation" (click)="isCollapsed = !isCollapsed">
       <span class="navbar-toggler-icon"></span>
@@ -17,4 +17,43 @@
         </li>
       </ul>
     </div>
+  </nav> -->
+
+  <nav class="navbar navbar-expand-lg fixed-top navbar-light bg-light" aria-label="Main navigation">
+    <div class="container-fluid">
+      <a class="navbar-brand" routerLink="/" routerLinkActive="router-link-active" > <img src="./assets/lion.svg" alt="lionIcon" width="70px">Assofi Ehouman Dominique</a>
+      <button class="navbar-toggler p-0 border-0" type="button" aria-expanded="false" id="navbarSideCollapse" aria-label="Toggle navigation" (click)="isCollapsed = !isCollapsed">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+  
+      <div class="navbar-collapse offcanvas-collapse" id="navbarsExampleDefault" [ngbCollapse]="isCollapsed" *ngIf="isCollapsed;else responsive">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0 custom-margins">
+          <li class="nav-item">
+            <a class="nav-link" routerLink='/Projects' routerLinkActive="router-link-active" >Projects</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" routerLink= "/Capability" routerLinkActive="router-link-active" >Capability</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" routerLink="/Contact" routerLinkActive="router-link-active">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <ng-template #responsive>
+      <div class="navbar-collapse offcanvas-collapse" id="navbarsExampleDefault" [ngbCollapse]="isCollapsed" >
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="responsive">
+            <a class="nav-link " routerLink='/Projects' routerLinkActive="router-link-active">Projects</a>
+          </li>
+          <li class="responsive ">
+            <a class="nav-link" routerLink= "/Capability" routerLinkActive="router-link-active">Capability</a>
+          </li>
+          <li class="responsive">
+            <a class="nav-link" routerLink="/Contact" routerLinkActive="router-link-active">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </ng-template>
   </nav>
+  
