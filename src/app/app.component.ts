@@ -3,7 +3,7 @@ import { CommonModule } from '@angular/common';
 import { RouterOutlet } from '@angular/router';
 import { NavbarComponent } from './navbar/navbar.component';
 import { HomeComponent } from './home/home.component';
-import { BreakpointObserver, Breakpoints, BreakpointState } from '@angular/cdk/layout';
+import { DarkModeService } from 'angular-dark-mode';
 
 @Component({
   selector: 'app-root',
@@ -14,4 +14,5 @@ import { BreakpointObserver, Breakpoints, BreakpointState } from '@angular/cdk/l
 })
 export class AppComponent {
   title = 'portfolio';
+  constructor(private darkModeService: DarkModeService) {}
 }

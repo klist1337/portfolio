@@ -1,9 +1,24 @@
-<div *ngIf="!isPhoneViewed ;else responsive">
-    <p class="about-me" >Hi there, i'm Dominique 👋</p>
-    <p class="description">Full Stack Developer , Future IA && Cybersecurity Specialist</p>
+<div *ngIf="!isPhoneViewed ;else responsive" [ngClass]="getHomeStyles()" class="container">
+    <div class="text-and-image-container">
+        <div class="text-container">
+            <p class="about-me" >Hi there, I'm Dominique 👋</p>
+            <p class="description">Full Stack Developer, AI & Cybersecurity Enthusiast</p>
+            <p class="descrip2">As a passionate full-stack developer, I am dedicated to transforming visionary ideas into digital reality.
+                 With expertise in frontend and backend development, I bring a holistic approach to web development.</p>
+        </div>
+            <img class="image-container" src="./assets/image.png" alt="image" >
+    </div>
+    <a type="button" routerLink="/Projects" routerLinkActive="router-link-active" class="btn btn-primary btn-lg" role="button" style="--bs-btn-border-radius:100px;">View my work</a>
+    <a type="button" routerLink="/Capability" routerLinkActive="router-link-active" class="btn btn-outline-primary btn-lg " role="button" style="--bs-btn-border-radius:100px; margin-left: 15px;">More about me</a>
 </div>
 <ng-template #responsive>
-    <div>
-        <p class="responsive">Hi there, im Dominique 👋</p>
+    <div [ngClass]="getHomeStyles()" class="responsive-container">
+        <p  class="responsive">Hi there, I'm Dominique 👋</p>
+        <p class="responsive-description">Full Stack Developer, AI & Cybersecurity Enthusiast</p>
+        <p class="responsive-descrip">As a passionate full-stack developer, I am dedicated to transforming visionary ideas into digital reality.
+            With expertise in frontend and backend development, I bring a holistic approach to web development.</p>
+            <a type="button" routerLink="/Projects" routerLinkActive="router-link-active" class="btn btn-primary btn-lg" role="button" style="--bs-btn-border-radius:100px;margin-left: 150px; margin-top: 10px;">View my work</a>
+            <a type="button" routerLink="/Capability" routerLinkActive="router-link-active" class="btn btn-outline-primary btn-lg " role="button" style="--bs-btn-border-radius:100px;margin-left: 150px; margin-top: 10px;">More about me</a>
     </div>
+    <img class="responsive-image-container" src="./assets/image.png" alt="image" >
 </ng-template>

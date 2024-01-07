@@ -1,0 +1,38 @@
+.toggle {
+    display: none;
+}
+.toggle-label {
+    cursor: pointer;
+    display: flex;
+    align-self: center;
+}
+
+.icon-container {
+    display: flex;
+    transition: opacity 0.3s ease;
+}
+.moon {
+    max-width: 47px;
+    height: auto;
+    margin-left: 35px;
+} 
+
+.moon {
+    opacity: 1;
+}
+
+
+.toggle:checked + .toggle-label .icon-container .moon {
+    opacity:1;
+    
+}
+
+
+@media (max-width: 1000px) {
+    .toggle {
+        display: none;
+    }
+    .toggle-label {
+        display: flex;
+    }
+}

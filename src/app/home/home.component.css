@@ -1,21 +1,229 @@
+
 .about-me {
     margin-top: 200px;
-    margin-left: 500px;
-    font-family: 'futura';
-    font-size: x-large;
-    font-weight:lighter;
-    color: #828282
+    font-family: sofia-pro, ui-sans-serif, system-ui, 
+    -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, 
+    "Helvetica Neue", Arial, "Noto Sans", 
+    sans-serif, "Apple Color Emoji", "Segoe UI Emoji", 
+    "Segoe UI Symbol", "Noto Color Emoji";
+    font-size: 24px;
+    line-height: 32px;
+    opacity: 1;
+    tab-size: 4;
+    visibility: visible;
+    word-spacing: 1px;
+    transform: matrix(1, 0, 0, 1, 0, 0);
+    color: rgb(91, 110, 128)
 }
-.responsive {
+.dark-mode .about-me {
     margin-top: 200px;
+    font-family: sofia-pro, ui-sans-serif, system-ui, 
+    -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, 
+    "Helvetica Neue", Arial, "Noto Sans", 
+    sans-serif, "Apple Color Emoji", "Segoe UI Emoji", 
+    "Segoe UI Symbol", "Noto Color Emoji";
+    font-size: 24px;
+    line-height: 32px;
+    opacity: 1;
+    tab-size: 4;
+    visibility: visible;
+    word-spacing: 1px;
+    transform: matrix(1, 0, 0, 1, 0, 0);
+    color: rgb(255, 255, 255)
+}
+.container {
+    margin-left: 500px;
+    width: 500px;
+}
+
+.text-and-image-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 1300px;
+    height: 550px;
+}
+
+.image-container {
+    margin-top: 200px;
+    margin-left: 100px;
+    width: 700px;
+}
+.responsive-container {
+    margin-top: 280px;
+    width: 420px;
+    height: 200px;
+}
+
+.responsive {
+    margin-top: 200px; 
     text-align: center;
-    font-family: 'futura';
-    font-size: x-large;
-    color:#828282
+    font-family: sofia-pro, ui-sans-serif, system-ui, 
+    -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, 
+    "Helvetica Neue", Arial, "Noto Sans", 
+    sans-serif, "Apple Color Emoji", "Segoe UI Emoji", 
+    "Segoe UI Symbol", "Noto Color Emoji";
+    font-size: 24px;
+    line-height: 32px;
+    opacity: 1;
+    tab-size: 4;
+    transform: matrix(1, 0, 0, 1, 0, 0);
+    word-spacing: 1px;
+    visibility: visible;
+    color:rgb(91, 110, 128)
+}
+
+.dark-mode .responsive {
+    margin-top: 200px; 
+    text-align: center;
+    font-family: sofia-pro, ui-sans-serif, system-ui, 
+    -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, 
+    "Helvetica Neue", Arial, "Noto Sans", 
+    sans-serif, "Apple Color Emoji", "Segoe UI Emoji", 
+    "Segoe UI Symbol", "Noto Color Emoji";
+    font-size: 24px;
+    line-height: 32px;
+    opacity: 1;
+    tab-size: 4;
+    transform: matrix(1, 0, 0, 1, 0, 0);
+    word-spacing: 1px;
+    visibility: visible;
+    color:rgb(255, 255, 255)
 }
 
 .description {
-    margin-left: 500px;
-    font-family: 'futura';
-    font-size: xx-large;
+    font-family: sofia-pro, ui-sans-serif, system-ui, 
+    -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, 
+    "Helvetica Neue", Arial, "Noto Sans", 
+    sans-serif, "Apple Color Emoji", "Segoe UI Emoji", 
+    "Segoe UI Symbol", "Noto Color Emoji";
+    font-size: 36px;
+    font-weight: 900;
+    line-height: 40px;
+    visibility: visible;
+    word-spacing: 1px;
+    tab-size: 4;
+    transform:matrix(1, 0, 0, 1, 0, 0);
+    color: rgb(0,8, 61);
+}
+.dark-mode .description {
+    color: #198754
+}
+
+.descrip2 {
+    font-family: sofia-pro, ui-sans-serif, system-ui, 
+    -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, 
+    "Helvetica Neue", Arial, "Noto Sans", 
+    sans-serif, "Apple Color Emoji", "Segoe UI Emoji", 
+    "Segoe UI Symbol", "Noto Color Emoji";
+    font-size: x-large;
+    font-size: 24px;
+    line-height: 32px;
+    opacity: 1;
+    tab-size: 4;
+    transform: matrix(1, 0, 0, 1, 0, 0);
+    visibility: visible;
+    color:rgb(91, 110, 128)
+}
+.dark-mode .descrip2 {
+    color: rgb(255, 255, 255);
+}
+
+.responsive-description {
+    margin-left: 68px;
+    font-family: sofia-pro, ui-sans-serif, system-ui, 
+    -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, 
+    "Helvetica Neue", Arial, "Noto Sans", 
+    sans-serif, "Apple Color Emoji", "Segoe UI Emoji", 
+    "Segoe UI Symbol", "Noto Color Emoji";
+    font-size: 36px;
+    font-weight: 900;
+    line-height: 40px;
+    visibility: visible;
+    transform: matrix(1, 0, 0, 1, 0, 0);
+    word-spacing: 1px;
+    color: rgb(0,8, 61);
+}
+.dark-mode .responsive-description {
+    color:#198754;
+}
+.responsive-descrip {
+    margin-left: 68px;
+    font-family: sofia-pro, ui-sans-serif, system-ui, 
+    -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, 
+    "Helvetica Neue", Arial, "Noto Sans", 
+    sans-serif, "Apple Color Emoji", "Segoe UI Emoji", 
+    "Segoe UI Symbol", "Noto Color Emoji";
+    font-size: 24px;
+    line-height: 32px;
+    opacity: 1;
+    tab-size: 4;
+    transform: matrix(1, 0, 0, 1, 0, 0);
+    visibility: visible;
+    word-spacing: 1;
+    color:rgb(91, 110, 128);
+}
+.btn-primary {
+    font-family: sofia-pro, ui-sans-serif, system-ui, 
+    -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, 
+    "Helvetica Neue", Arial, "Noto Sans", 
+    sans-serif, "Apple Color Emoji", "Segoe UI Emoji", 
+    "Segoe UI Symbol", "Noto Color Emoji";
+    font-weight: bolder;
+    tab-size: 4;
+    background-image: linear-gradient(90deg,#009bff,#0062ff);
+    box-shadow: 0 2px 8px 0 rgba(0,34,255,.08),0 2px 8px 0 rgba(0,11,80,.12)
+}
+.dark-mode .btn-primary {
+    background-image: linear-gradient(90deg,#17e887,#198754);
+    border-color: #2be890;
+}
+
+.btn-outline-primary {
+    border: none;
+    font-weight: bolder;
+    opacity: 1;
+}
+.dark-mode .btn-outline-primary {
+    font-weight: bolder;
+    border: none;
+    color: #198754;
+    background-color: #ffffff00;
+}
+.dark-mode .responsive-descrip {
+    color:#ffffff
+}
+
+@media (max-width: 1600px) {
+    .text-container {
+        width: 500px;
+    }
+    .text-and-image-container {
+        flex-direction: column;
+        align-items: center;
+        width: 80px;
+    }
+    .btn-primary {
+       margin-left: -210px;
+    }
+}
+.responsive-image-container {
+    width: 380px;
+    height: 400px;
+    flex-direction: column;
+    margin-left: 55px;
+    margin-top: 360px;
+}
+
+@media (max-width: 1000px) {
+    .container {
+        margin-top: 80px;
+    }
+    .text-container, .image-container{
+        margin-left: -380%;
+    }
+    .btn-primary {
+        margin-left: -290px;
+    }
+
 }

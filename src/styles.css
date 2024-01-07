@@ -1,1 +1,15 @@
 /* You can add global styles to this file, and also import other style files */
+
+body:not(.dark-mode-preloading) {
+    transition: all 0.3s linear;
+}
+
+body.dark-mode {
+    background-color: #3f4344;
+    color: #fdfdfd;
+}
+
+body.light-mode {
+    background-color: #fdfdfd;
+    color: #3f4344;
+}
