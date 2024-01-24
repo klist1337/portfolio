@@ -47,15 +47,15 @@
     color: rgb(91, 110, 128);
 }
 
-.navbar-nav .nav-item  .nav-link.active,
-.navbar-nav .nav-item 
-a.nav-link:hover {
+.navbar-nav .nav-item a.nav-link:hover, 
+.navbar-nav .nav-item a.nav-link.active
+{
   color: rgb(0, 98, 225) ; /* Change this to the desired color for the active route */
 }
 
-.navbar-nav .responsive  .nav-link.active,
-.navbar-nav .responsive 
-a.nav-link:hover {
+.navbar-nav .responsive a.nav-link:hover ,
+.navbar-nav .responsive a.nav-link.active
+{
   color: rgb(0, 98, 225) ; /* Change this to the desired color for the active route */
 }
 .dark-mode .navbar-brand {
@@ -70,4 +70,5 @@ a.nav-link:hover {
 .dark-mode .navbar-nav .responsive a.nav-link.active {
   color:#198754
 }
+
 

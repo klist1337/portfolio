@@ -13,3 +13,10 @@ body.light-mode {
     background-color: #fdfdfd;
     color: #3f4344;
 }
+body , html {
+    scroll-behavior: smooth;
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;

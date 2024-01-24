@@ -1,24 +1,37 @@
-<div *ngIf="!isPhoneViewed ;else responsive" [ngClass]="getHomeStyles()" class="container">
-    <div class="text-and-image-container">
-        <div class="text-container">
-            <p class="about-me" >Hi there, I'm Dominique 👋</p>
-            <p class="description">Full Stack Developer, AI & Cybersecurity Enthusiast</p>
-            <p class="descrip2">As a passionate full-stack developer, I am dedicated to transforming visionary ideas into digital reality.
-                 With expertise in frontend and backend development, I bring a holistic approach to web development.</p>
+<div class="h-[1800px]">
+        <div *ngIf="!isPhoneViewed ;else responsive" [ngClass]="getHomeStyles()" class="container">
+                <div class="text-and-image-container animate__animated animate__fadeInUp mt-40" >
+                        <div class="text-container">
+                        <p class="about-me " >Hi there, I'm Dominique 👋</p>
+                        <p class="description ">Full Stack Developer, AI & Cybersecurity Enthusiast</p>
+                        <p class="descrip2">As a passionate full-stack developer, I am dedicated to transforming visionary ideas into digital reality.
+                                With expertise in frontend and backend development, I bring a holistic approach to web development.</p>
+                        </div>
+                        <img class="image-container" [src]="getImageUrl()" alt="image" >
+                </div>
+                <a type="button" (click)="scrollToComponent('Projects')" class="btn btn-primary btn-lg" role="button" style="--bs-btn-border-radius:100px;">View my work</a>
+                <a type="button" (click)="scrollToComponent('Capability')" class="btn btn-outline-primary btn-lg " role="button" style="--bs-btn-border-radius:100px; margin-left: 15px;">More about me</a>
+                <div class="thanking-container">
+                        <p class="thanking">Heartfelt thanks to these differents school for the solid academic foundation and valuable learning opportunities:</p>
+                </div> 
         </div>
-            <img class="image-container" src="./assets/image.png" alt="image" >
-    </div>
-    <a type="button" routerLink="/Projects" routerLinkActive="router-link-active" class="btn btn-primary btn-lg" role="button" style="--bs-btn-border-radius:100px;">View my work</a>
-    <a type="button" routerLink="/Capability" routerLinkActive="router-link-active" class="btn btn-outline-primary btn-lg " role="button" style="--bs-btn-border-radius:100px; margin-left: 15px;">More about me</a>
+        <div class="flex mt-40 animate__animated animate__slideInLeft">
+                 <img src="./assets/42_Logo.svg.png" alt="logo" class= " Logo42"> 
+                 <img src="./assets/1337_Logo.jpg" alt="1337-logo" class=" Logo1337 ">
+                 <img src="./assets/Um6p_Logo.png" alt="um6p-logo" class="LogoUm6p "> 
+        </div>
 </div>
+
+
 <ng-template #responsive>
-    <div [ngClass]="getHomeStyles()" class="responsive-container">
-        <p  class="responsive">Hi there, I'm Dominique 👋</p>
-        <p class="responsive-description">Full Stack Developer, AI & Cybersecurity Enthusiast</p>
-        <p class="responsive-descrip">As a passionate full-stack developer, I am dedicated to transforming visionary ideas into digital reality.
-            With expertise in frontend and backend development, I bring a holistic approach to web development.</p>
-            <a type="button" routerLink="/Projects" routerLinkActive="router-link-active" class="btn btn-primary btn-lg" role="button" style="--bs-btn-border-radius:100px;margin-left: 150px; margin-top: 10px;">View my work</a>
-            <a type="button" routerLink="/Capability" routerLinkActive="router-link-active" class="btn btn-outline-primary btn-lg " role="button" style="--bs-btn-border-radius:100px;margin-left: 150px; margin-top: 10px;">More about me</a>
-    </div>
-    <img class="responsive-image-container" src="./assets/image.png" alt="image" >
+        <div [ngClass]="getHomeStyles()" class="responsive-container animate__animated animate__fadeInUp">
+            <p  class="responsive">Hi there, I'm Dominique 👋</p>
+            <p class="responsive-description">Full Stack Developer, AI & Cybersecurity Enthusiast</p>
+            <p class="responsive-descrip">As a passionate full-stack developer, I am dedicated to transforming visionary ideas into digital reality.
+                With expertise in frontend and backend development, I bring a holistic approach to web development.</p>
+                <a type="button" (click)="scrollToComponent('Projects')" class="btn btn-primary btn-lg" role="button" style="--bs-btn-border-radius:100px;margin-left: 150px; margin-top: 10px;">View my work</a>
+                <a type="button" (click)="scrollToComponent('Capability')" class="btn btn-outline-primary btn-lg " role="button" style="--bs-btn-border-radius:100px;margin-left: 150px; margin-top: 10px;">More about me</a>
+        </div>
+        <img class="responsive-image-container" src="./assets/image3.png" alt="image" >
 </ng-template>
+

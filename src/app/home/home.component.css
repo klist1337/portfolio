@@ -13,7 +13,7 @@
     visibility: visible;
     word-spacing: 1px;
     transform: matrix(1, 0, 0, 1, 0, 0);
-    color: rgb(91, 110, 128)
+    color: rgb(91, 110, 128);
 }
 .dark-mode .about-me {
     margin-top: 200px;
@@ -58,12 +58,9 @@
 .responsive {
     margin-top: 200px; 
     text-align: center;
-    font-family: sofia-pro, ui-sans-serif, system-ui, 
-    -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, 
-    "Helvetica Neue", Arial, "Noto Sans", 
-    sans-serif, "Apple Color Emoji", "Segoe UI Emoji", 
-    "Segoe UI Symbol", "Noto Color Emoji";
-    font-size: 24px;
+    font-family: inherit;
+    margin-right: 30px;
+    font-size: 20px;
     line-height: 32px;
     opacity: 1;
     tab-size: 4;
@@ -136,7 +133,7 @@
     "Helvetica Neue", Arial, "Noto Sans", 
     sans-serif, "Apple Color Emoji", "Segoe UI Emoji", 
     "Segoe UI Symbol", "Noto Color Emoji";
-    font-size: 36px;
+    font-size: 30px;
     font-weight: 900;
     line-height: 40px;
     visibility: visible;
@@ -154,7 +151,7 @@
     "Helvetica Neue", Arial, "Noto Sans", 
     sans-serif, "Apple Color Emoji", "Segoe UI Emoji", 
     "Segoe UI Symbol", "Noto Color Emoji";
-    font-size: 24px;
+    font-size: 20px;
     line-height: 32px;
     opacity: 1;
     tab-size: 4;
@@ -183,6 +180,8 @@
     border: none;
     font-weight: bolder;
     opacity: 1;
+    --bs-btn-hover-color: #0d6efd;
+    --bs-btn-hover-bg: none;
 }
 .dark-mode .btn-outline-primary {
     font-weight: bolder;
@@ -194,17 +193,75 @@
     color:#ffffff
 }
 
+.Logo42 {
+    max-width: 180px;
+    max-height: 180px;
+    margin-right: 10%;
+    margin-left: 30%;
+}
+.Logo1337{
+    max-width: 180px;
+    margin-right: 10%;
+    max-height: 180px;
+}
+.LogoUm6p {
+    max-width: 500px;
+    max-height: 80px;
+    margin-top: 60px;
+    margin-right: 30%;
+}
+.thanking-container {
+    width: max-content;
+    margin-left: 110%;
+}
+.thanking {
+    text-align: center;
+    margin-top: 280px;
+    font-family: inherit;
+    font-size: 21px;
+    line-height: 32px;
+    opacity: 1;
+    tab-size: 4;
+    transform: matrix(1, 0, 0, 1, 0, 0);
+    visibility: visible;
+    word-spacing: 1;
+    color:rgb(91, 110, 128)
+}
+.dark-mode .thanking {
+    color: rgb(255, 255, 255);
+}
+@media (max-width: 1730px) {
+    .image-container {
+        max-width: 600px ;
+        margin-right: 30px;
+    }
+    .text-and-image-container {
+        max-width: 1200px;
+        align-items: center;
+    }
+    .btn-primary {
+        margin-top: 25px;
+        margin-right: -5px;
+    }
+    .btn-outline-primary {
+        margin-top: 25px;
+    }
+    
+}
 @media (max-width: 1600px) {
     .text-container {
         width: 500px;
+        align-items: center;
+
     }
     .text-and-image-container {
         flex-direction: column;
         align-items: center;
         width: 80px;
+        height: 510px;
     }
     .btn-primary {
-       margin-left: -210px;
+        margin-left: -210px;
     }
 }
 .responsive-image-container {
@@ -212,7 +269,7 @@
     height: 400px;
     flex-direction: column;
     margin-left: 55px;
-    margin-top: 360px;
+    margin-top: 300px;
 }
 
 @media (max-width: 1000px) {
@@ -220,10 +277,24 @@
         margin-top: 80px;
     }
     .text-container, .image-container{
-        margin-left: -380%;
+        margin-left: -280%;
     }
+
     .btn-primary {
-        margin-left: -290px;
+        margin-left: -320px;
+    }
+
+}
+@media (max-width: 700px) {
+    .container {
+        margin-top: 80px;
+    }
+    .text-container, .image-container{
+        margin-left: -480%;
+    }
+
+    .btn-primary {
+        margin-left: -400px;
     }
 
 }

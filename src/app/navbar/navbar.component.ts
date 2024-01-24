@@ -1,9 +1,11 @@
 import { NgClass, NgIf, NgStyle } from '@angular/common';
 import { Component, OnInit } from '@angular/core';
-import { Router, RouterLink, RouterOutlet } from '@angular/router';
+import { ActivatedRoute, NavigationEnd, Router, RouterLink, RouterOutlet } from '@angular/router';
 import { NgbCollapseModule} from '@ng-bootstrap/ng-bootstrap';
 import { DarkModeToogleComponent } from '../dark-mode-toogle/dark-mode-toogle.component';
 import { DarkModeService } from 'angular-dark-mode';
+import { SmoothScrollService } from '../smooth-scroll.service';
+
 
 @Component({
   selector: 'app-navbar',
@@ -16,7 +18,10 @@ export class NavbarComponent implements OnInit {
   public isCollapsed = true;
   darkmode$ = this.darkModeService.darkMode$;
   isDarkMode = false;
-  constructor(private router: Router, private darkModeService: DarkModeService) {}
+  constructor(private route:Router, 
+    private darkModeService: DarkModeService,
+    private smoothScrollService: SmoothScrollService,
+    ) {}
 
   ngOnInit(): void {
     this.darkModeService.darkMode$.subscribe(
@@ -24,8 +29,8 @@ export class NavbarComponent implements OnInit {
       this.isDarkMode = darkmode;
     });
   }
-  isActive(route: string) : boolean {
-    return this.router.url == route;
+  isActive(routePath: string) : boolean {
+    return this.route.url == routePath;
   }
   getNavBarStyles() : {[key: string]: boolean} {
     return {
@@ -35,5 +40,9 @@ export class NavbarComponent implements OnInit {
       'navbar-dark': this.isDarkMode,
     }
   }
-  
+  scrollToComponent(componentId: string) {
+    this.smoothScrollService.scrollToComponent(componentId);
+    this.route.navigate([`/${componentId}`]);
+  }
+
 }

@@ -1,4 +1,91 @@
-.container {
-    margin-top: 100px;
-    margin-left: 10px;
+.projects {
+    font-family: inherit;
+    font-size: 36px;
+    line-height: 32px;
+    font-weight: bold;
+    opacity: 1;
+    tab-size: 4;
+    visibility: visible;
+    word-spacing: 1px;
+    transform: matrix(1, 0, 0, 1, 0, 0);
+    color: rgb(0, 8, 61);
+}
+.dark-mode .projects {
+    color: #198754 ;
+}
+.description {
+    font-family: inherit;
+    font-size: 24px;
+    line-height: 32px;
+    opacity: 1;
+    tab-size: 4;
+    visibility: visible;
+    word-spacing: 1px;
+    transform: matrix(1, 0, 0, 1, 0, 0);
+    color: rgb(91, 110, 128);
+}
+.card {
+    margin-left: 230px;
+    margin-right: 230px;
+}
+.dark-mode .description {
+     color: rgb(255, 255, 255);
+}
+
+@media (max-width:2300px) {
+    .card {
+        margin-left: 150px;
+        margin-right: 150px;
+    }
+}
+
+@media (max-width:2000px) {
+    .card {
+        margin-left: 100px;
+        margin-right: 100px;
+    }
+}
+
+@media (max-width:1600px) {
+    .card {
+        margin-left: 50px;
+        margin-right: 50px;
+    }
+}
+
+@media (max-width:1300px) {
+    .card {
+        align-items: center;
+        margin-left: 30px;
+        margin-right: 30px;
+    }
+}
+@media (max-width:900px) {
+     .projects {
+        font-size: 30px;
+    }
+    .description {
+        font-size: 20px;
+    }
+    .card {
+        align-items: center;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+}
+
+@media (max-width: 600px) {
+    .projects {
+        font-size: 25px;
+    }
+    .description {
+        font-size: 18px;
+    }
+    .card {
+        flex-direction: column;
+        align-items: center;
+        margin-left: 0.5px;
+        margin-right: 0.5px;
+    }
+    
 }

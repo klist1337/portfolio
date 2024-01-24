@@ -87,7 +87,8 @@
             "styles": [
               "src/styles.css"
             ],
-            "scripts": ["./node_modules/angular-dark-mode/angular-dark-mode.js"]
+            "scripts": ["./node_modules/angular-dark-mode/angular-dark-mode.js",
+            "../node_modules/scrollreveal/dist/scrollreveal.js"]
           }
         }
       }

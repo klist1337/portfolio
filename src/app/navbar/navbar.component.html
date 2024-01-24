@@ -1,23 +1,22 @@
 <nav class="navbar navbar-expand-lg fixed-top" [ngClass]="getNavBarStyles()" aria-label="Main navigation">
     <div class="container-fluid">
-      
-      <a class="navbar-brand" routerLink="/" routerLinkActive="active">
-        <img src="./assets/eassofi.png"  style="width: 60px; margin-left: 15px; margin-right: 15px;" >
-        Assofi Ehouman Dominique</a>
+      <button (click)="scrollToComponent('Home')">
+        <a > <img src="./assets/eassofi.png"  style="width: 60px; margin-left: 10px; margin-right: 15px;" ></a>
+      </button>
+        <button (click)="scrollToComponent('Home')" class="navbar-brand"> <a [routerLink]="['/']">Assofi Ehouman Dominique</a></button>
       <button class="navbar-toggler p-0 border-0" type="button" aria-expanded="false" id="navbarSideCollapse" aria-label="Toggle navigation" (click)="isCollapsed = !isCollapsed">
         <span class="navbar-toggler-icon"></span>
       </button>
-  
       <div class="navbar-collapse offcanvas-collapse" id="navbarsExampleDefault" [ngbCollapse]="isCollapsed" *ngIf="isCollapsed;else responsive">
         <ul class="navbar-nav me-auto mb-2 mb-lg-0 custom-margins">
           <li class="nav-item">
-            <a class="nav-link" routerLink= "/Projects" [class.active]="isActive('/Projects')">Projects</a>
+              <button><a class="nav-link" (click)="scrollToComponent('Projects')" [class.active]="isActive('/Projects')">Projects</a></button>
           </li>
           <li class="nav-item">
-            <a class="nav-link" routerLink= "/Capability" [class.active]="isActive('/Capability')" >Capability</a>
+            <button><a class="nav-link" (click)="scrollToComponent('Capability')" [class.active]="isActive('/Capability')" >Capability</a></button>
           </li>
           <li class="nav-item">
-            <a class="nav-link" routerLink="/Contact" [class.active]="isActive('/Contact')">Contact</a>
+            <button> <a class="nav-link" (click)="scrollToComponent('Contact')" [class.active]="isActive('/Contact')">Contact</a> </button>
           </li>
           <app-dark-mode-toogle></app-dark-mode-toogle>
         </ul>
@@ -27,13 +26,13 @@
       <div class="navbar-collapse offcanvas-collapse" id="navbarsExampleDefault" [ngbCollapse]="isCollapsed" >
         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
           <li class="responsive">
-            <a class="nav-link " routerLink='/Projects' [class.active]="isActive('/Projects')">Projects</a>
+            <button><a class="nav-link" (click)="scrollToComponent('Projects')" [class.active]="isActive('/Projects')">Projects</a> </button>
           </li>
           <li class="responsive ">
-            <a class="nav-link" routerLink= "/Capability" [class.active]="isActive('/Capability')">Capability</a>
+            <button> <a class="nav-link" (click)="scrollToComponent('Capability')" [class.active]="isActive('/Capability')">Capability</a> </button>
           </li>
           <li class="responsive">
-            <a class="nav-link" routerLink="/Contact" [class.active]="isActive('/Contact')">Contact</a>
+            <button> <a class="nav-link" (click)="scrollToComponent('Contact')" [class.active]="isActive('/Contact')">Contact</a> </button>
           </li>
           <app-dark-mode-toogle style="display: flex ; align-items:center; justify-content: center; "></app-dark-mode-toogle>
         </ul>
