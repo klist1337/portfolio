@@ -63,6 +63,11 @@ export class HomeComponent implements OnInit {
       'dark-mode': this.isDarkMode,
     }
   }
+  getThankStyles() : {[key: string] : boolean} {
+    return {
+      'dark-mode': this.isDarkMode,
+    }
+  }
   scrollToComponent(componentId: string) {
     this.smoothScrollService.scrollToComponent(componentId);
     this.route.navigate([`/${componentId}`]);

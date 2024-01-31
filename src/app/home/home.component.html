@@ -2,29 +2,29 @@
         <div *ngIf="!isPhoneViewed ;else responsive" [ngClass]="getHomeStyles()" class="container">
                 <div class="text-and-image-container animate__animated animate__fadeInUp mt-40" >
                         <div class="text-container">
-                        <p class="about-me " >Hi there, I'm Dominique 👋</p>
-                        <p class="description ">Full Stack Developer, AI & Cybersecurity Enthusiast</p>
-                        <p class="descrip2">As a passionate full-stack developer, I am dedicated to transforming visionary ideas into digital reality.
+                        <p class="about-me animate__animated animate__pulse animate__slower-3s animate__infinite" >Hi there, I'm Dominique 👋</p>
+                        <p class="description animate__animated   animate__infinite ">Full Stack Developer, AI & Cybersecurity Enthusiast</p>
+                        <p class="descrip2 animate__animated">As a passionate full-stack developer, I am dedicated to transforming visionary ideas into digital reality.
                                 With expertise in frontend and backend development, I bring a holistic approach to web development.</p>
                         </div>
-                        <img class="image-container" [src]="getImageUrl()" alt="image" >
+                        <img class="image-container animate__animated animate__tada animate__delay-5s" [src]="getImageUrl()" alt="image" >
                 </div>
-                <a type="button" (click)="scrollToComponent('Projects')" class="btn btn-primary btn-lg" role="button" style="--bs-btn-border-radius:100px;">View my work</a>
+                <a type="button" (click)="scrollToComponent('Projects')" class="btn btn-primary btn-lg animate__animated animate__flash animate__delay-5s animate__repeat-3" role="button" style="--bs-btn-border-radius:100px;">View my work</a>
                 <a type="button" (click)="scrollToComponent('Capability')" class="btn btn-outline-primary btn-lg " role="button" style="--bs-btn-border-radius:100px; margin-left: 15px;">More about me</a>
-                <div class="thanking-container">
-                        <p class="thanking">Heartfelt thanks to these differents school for the solid academic foundation and valuable learning opportunities:</p>
-                </div> 
         </div>
-        <div class="flex mt-40 animate__animated animate__slideInLeft">
-                 <img src="./assets/42_Logo.svg.png" alt="logo" class= " Logo42"> 
-                 <img src="./assets/1337_Logo.jpg" alt="1337-logo" class=" Logo1337 ">
-                 <img src="./assets/Um6p_Logo.png" alt="um6p-logo" class="LogoUm6p "> 
+        <div [ngClass]="getThankStyles()">
+                <p class="thanking text-center">Heartfelt thanks to these differents school for the solid academic foundation and valuable learning opportunities:</p>
+        </div>
+        <div class="flex justify-center mt-20 animate__animated animate__slideInLeft">
+                 <img src="./assets/42_Logo.svg.png" alt="logo" class= " Logo42 py-8 px-4"> 
+                 <img src="./assets/1337_Logo.jpg" alt="1337-logo" class=" Logo1337 py-8 px-4">
+                 <img src="./assets/Um6p_Logo.png" alt="um6p-logo" class="LogoUm6p px-4 py-4"> 
         </div>
 </div>
 
 
 <ng-template #responsive>
-        <div [ngClass]="getHomeStyles()" class="responsive-container animate__animated animate__fadeInUp">
+        <div [ngClass]="getHomeStyles()" class="flex-col responsive-container animate__animated animate__fadeInUp">
             <p  class="responsive">Hi there, I'm Dominique 👋</p>
             <p class="responsive-description">Full Stack Developer, AI & Cybersecurity Enthusiast</p>
             <p class="responsive-descrip">As a passionate full-stack developer, I am dedicated to transforming visionary ideas into digital reality.

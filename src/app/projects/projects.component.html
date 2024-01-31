@@ -1,70 +1,244 @@
 <div [ngClass]="getProjectStyle()" class="border-t-2 border-slate-200 animate__animated 
-      animate__fadeInUp h-[1800px] mt-[-200px]">
+      animate__fadeInUp h-[2300px] borderline mt-[-200px]">
     <div class="mt-20"> 
         <p class="text-center projects">Projects</p>
         <p class="mt-4 text-center description">C, C++, Administration Linux System, Network, Devops And Web App Projects.</p>
         <p class="mt-2 text-center description">This Section Contain All The Projects That I Made During My Curriculum At 
             1337 Coding School</p>
     </div>
-    <div class="flex items-center">
-        <div [@wideNarrow]="isWide ? 'wide' : 'narrow'">
-        </div>
-        <div class="max-w-sm rounded overflow-hidden shadow-lg mt-20 card"  
-            (pointerenter)="toggleAnimation()" (pointerleave)="toggleAnimation()">
-            <img class="w-full" src="./assets/pingpong.jpg" alt="Sunset in the mountains">
-            <div class="px-6 py-4">
-              <div class="font-bold text-xl mb-2">The Coldest Sunset</div>
-              <p class="text-gray-700 text-base">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus quia, nulla! Maiores et perferendis eaque, exercitationem praesentium nihil.
-              </p>
+    <div class="flex flex-wrap justify-center mt-10">
+
+    <!-- card 1 -->
+    <div class="p-4 max-w-lg kard" >
+      <div class="flex rounded-lg h-full bg-neutral-300 shadow-lg p-8 flex-col" [ngClass]="darkCardBg()"
+      [@scale]="cardStates['FT_TRANSCENDANCE']" 
+        (mouseover)="toggleIn('FT_TRANSCENDANCE')" (mouseout)="toggleOut('FT_TRANSCENDANCE')">
+        <img class="w-full" src="./assets/ping.jpg" alt="pingpong">
+        <div class="flex items-center mb-3 mt-2">
+                <div
+                    class="w-8 h-8 mr-3 inline-flex items-center justify-center rounded-full bg-indigo-500 text-dark flex-shrink-0">
+                    <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                        stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+                        <path d="M22 12h-4l-3 9L9 3l-3 9H2"></path>
+                    </svg>
+                </div>
+                <h2 class="text-dark text-lg font-medium text mt-2">FT_TRANSCENDANCE</h2>
             </div>
-        </div>
-        <div class="max-w-sm rounded overflow-hidden shadow-lg mt-20 card" (pointerenter)="toggleAnimation()" (pointerleave)="toggleAnimation()">
-            <img class="w-full" src="./assets/pingpong.jpg" alt="Sunset in the mountains">
-            <div class="px-6 py-4">
-              <div class="font-bold text-xl mb-2">The Coldest Sunset</div>
-              <p class="text-gray-700 text-base">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus quia, nulla! Maiores et perferendis eaque, exercitationem praesentium nihil.
-              </p>
-            </div>
-        </div>
-        <div class="max-w-sm rounded overflow-hidden shadow-lg mt-20 card" (pointerenter)="toggleAnimation()" (pointerleave)="toggleAnimation()">
-            <img class="w-full" src="./assets/pingpong.jpg" alt="Sunset in the mountains">
-            <div class="px-6 py-4">
-              <div class="font-bold text-xl mb-2">The Coldest Sunset</div>
-              <p class="text-gray-700 text-base">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus quia, nulla! Maiores et perferendis eaque, exercitationem praesentium nihil.
-              </p>
+            <div class="flex flex-col justify-between flex-grow">
+                <p class="leading-relaxed text text-lg text-dark">
+                  Web Project that aims to create of a Ping Pong SPA 
+                  game with several functionalities as Chat, 2FA Authentication, Oauth2 authentication 
+                  and etc using Angular and Tailwind CSS in Front-End 
+                  and NestJs for Back-End.
+                </p>
             </div>
         </div>
     </div>
-    <div class="flex items-center">
-        <div class="max-w-sm rounded overflow-hidden shadow-lg mt-20 card" (pointerenter)="toggleAnimation()" (pointerleave)="toggleAnimation()">
-            <img class="w-full" src="./assets/pingpong.jpg" alt="Sunset in the mountains">
-            <div class="px-6 py-4">
-              <div class="font-bold text-xl mb-2">The Coldest Sunset</div>
-              <p class="text-gray-700 text-base">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus quia, nulla! Maiores et perferendis eaque, exercitationem praesentium nihil.
-              </p>
+
+    <!-- card 2 -->
+    <div class="p-4 max-w-lg kard" >
+      <div class="flex rounded-lg h-full bg-neutral-300 shadow-lg p-8 flex-col" 
+      [ngClass]="darkCardBg()" [@scale]="cardStates['FT_IRC']"
+      (mouseover)="toggleIn('FT_IRC')" (mouseout)="toggleOut('FT_IRC')">
+        <img class="w-full" src="./assets/irc.png" alt="irc">
+        <div class="flex items-center mb-3 mt-2">
+                <div
+                    class="w-8 h-8 mr-3 inline-flex items-center justify-center rounded-full bg-indigo-500 text-dark flex-shrink-0">
+                    <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                        stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+                        <path d="M22 12h-4l-3 9L9 3l-3 9H2"></path>
+                    </svg>
+                </div>
+                <h2 class="text-dark text-lg font-medium text mt-2">FT_IRC</h2>
             </div>
-        </div>
-        <div class="max-w-sm rounded overflow-hidden shadow-lg mt-20 card" (pointerenter)="toggleAnimation()" (pointerleave)="toggleAnimation()">
-            <img class="w-full" src="./assets/pingpong.jpg" alt="Sunset in the mountains">
-            <div class="px-6 py-4">
-              <div class="font-bold text-xl mb-2">The Coldest Sunset</div>
-              <p class="text-gray-700 text-base">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus quia, nulla! Maiores et perferendis eaque, exercitationem praesentium nihil.
-              </p>
-            </div>
-        </div>
-        <div class="max-w-sm rounded overflow-hidden shadow-lg mt-20 card" (pointerenter)="toggleAnimation()" (pointerleave)="toggleAnimation()">
-            <img class="w-full" src="./assets/pingpong.jpg" alt="Sunset in the mountains">
-            <div class="px-6 py-4">
-              <div class="font-bold text-xl mb-2">The Coldest Sunset</div>
-              <p class="text-gray-700 text-base">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus quia, nulla! Maiores et perferendis eaque, exercitationem praesentium nihil.
-              </p>
+            <div class="flex flex-col justify-between flex-grow">
+                <p class="leading-relaxed text  text-lg text-dark">
+                  Creation of an IRC Server in C++ (Internet Relay Chat) 
+                  based on the IRC protocol, which is a Protocol used by IRC servers and clients, IRC Protocol is a text-based TCP protocol. 
+                </p>
             </div>
         </div>
     </div>
+    <!--card 3-->
+    <div class="p-4 max-w-lg kard" >
+      <div class="flex rounded-lg h-full bg-neutral-300 shadow-lg p-8 flex-col" 
+      [ngClass]="darkCardBg()" [@scale]="cardStates['INCEPTION']"
+      (mouseover)="toggleIn('INCEPTION')" (mouseout)="toggleOut('INCEPTION')">
+        <img class="w-full" src="./assets/Docker.png" alt="docker">
+        <div class="flex items-center mb-3 mt-2">
+                <div
+                    class="w-8 h-8 mr-3 inline-flex items-center justify-center rounded-full bg-indigo-500 text-dark flex-shrink-0">
+                    <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                        stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+                        <path d="M22 12h-4l-3 9L9 3l-3 9H2"></path>
+                    </svg>
+                </div>
+                <h2 class="text-dark text-lg font-medium text mt-2">INCEPTION</h2>
+            </div>
+            <div class="flex flex-col justify-between flex-grow">
+                <p class="leading-relaxed text  text-lg text-dark">
+                  This project aims to expand our knowledge of system administration through the use of Docker. 
+                  We have virtualized several Docker images using Docker-compose and creating them in a virtual machine.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    </div>
+    <div class="flex flex-wrap justify-center mt-10">
+
+      <!-- card 4 -->
+      <div class="p-4 max-w-lg kard" >
+        <div class="flex rounded-lg h-full bg-neutral-300 shadow-lg p-8 flex-col" [ngClass]="darkCardBg()"
+        [@scale]="cardStates['FT_CONTAINERS']" 
+          (mouseover)="toggleIn('FT_CONTAINERS')" (mouseout)="toggleOut('FT_CONTAINERS')">
+          <img class="w-full" src="./assets/stl_containers.png" alt="stl_containers">
+          <div class="flex items-center mb-3 mt-2">
+                  <div
+                      class="w-8 h-8 mr-3 inline-flex items-center justify-center rounded-full bg-indigo-500 text-dark flex-shrink-0">
+                      <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                          stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+                          <path d="M22 12h-4l-3 9L9 3l-3 9H2"></path>
+                      </svg>
+                  </div>
+                  <h2 class="text-dark text-lg font-medium text mt-2">FT_CONTAINERS</h2>
+              </div>
+              <div class="flex flex-col justify-between flex-grow">
+                  <p class="leading-relaxed text  text-lg text-dark">
+                    implementation of STL data structures in C++, such as vectors, 
+                    lists and maps, to understand how they work and to learn more about C++ OOP.
+                  </p>
+              </div>
+          </div>
+      </div>
+  
+      <!-- card 5 -->
+      <div class="p-4 max-w-lg kard" >
+        <div class="flex rounded-lg h-full bg-neutral-300 shadow-lg p-8 flex-col" 
+        [ngClass]="darkCardBg()"[@scale]="cardStates['CUB3D']"
+        (mouseover)="toggleIn('CUB3D')" (mouseout)="toggleOut('CUB3D')">
+          <img class="w-full" src="./assets/cub3d.png" alt="cub3d">
+          <div class="flex items-center mb-3 mt-2">
+                  <div
+                      class="w-8 h-8 mr-3 inline-flex items-center justify-center rounded-full bg-indigo-500 text-dark flex-shrink-0">
+                      <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                          stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+                          <path d="M22 12h-4l-3 9L9 3l-3 9H2"></path>
+                      </svg>
+                  </div>
+                  <h2 class="text-dark text-lg font-medium text mt-2">CUB3D</h2>
+              </div>
+              <div class="flex flex-col justify-between flex-grow">
+                  <p class="leading-relaxed text  text-lg text-dark">
+                    graphical project in C aimed at repleimenting a famous
+                    game from the 90s (wolfstein3d) with a minilibx (minimal C library for 
+                    graphical project) using raycasting Method.
+                  </p>
+              </div>
+          </div>
+      </div>
+      <!-- card 6 -->
+      <div class="p-4 max-w-lg kard" >
+        <div class="flex rounded-lg h-full bg-neutral-300 shadow-lg p-8 flex-col" 
+        [ngClass]="darkCardBg()" [@scale]="cardStates['NETPRACTICE']"
+        (mouseover)="toggleIn('NETPRACTICE')" (mouseout)="toggleOut('NETPRACTICE')">
+          <img class="w-full" src="./assets/netpractice.png" alt="netpractice">
+          <div class="flex items-center mb-3 mt-2">
+                  <div
+                      class="w-8 h-8 mr-3 inline-flex items-center justify-center rounded-full bg-indigo-500 text-dark flex-shrink-0">
+                      <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                          stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+                          <path d="M22 12h-4l-3 9L9 3l-3 9H2"></path>
+                      </svg>
+                  </div>
+                  <h2 class="text-dark text-lg font-medium text mt-2">NETPRACTICE</h2>
+              </div>
+              <div class="flex flex-col justify-between flex-grow">
+                  <p class="leading-relaxed text  text-lg text-dark">
+                    This project is a comprehensive guide to understanding the fundamentals of networking. 
+                    It covers a wide range of topics, including network devices,
+                    the OSI model , subnet masks, routers, switches, and other related topics.
+                  </p>
+              </div>
+          </div>
+      </div>
+      </div>
+      <div class="flex flex-wrap justify-center mt-10">
+
+        <!-- card 7 -->
+        <div class="p-4 max-w-lg kard" >
+          <div class="flex rounded-lg h-full bg-neutral-300 shadow-lg p-8 flex-col" [ngClass]="darkCardBg()"
+          [@scale]="cardStates['MINISHELL']" 
+            (mouseover)="toggleIn('MINISHELL')" (mouseout)="toggleOut('MINISHELL')">
+            <img class="w-full" src="./assets/shell.gif" alt="shell">
+            <div class="flex items-center mb-3 mt-2">
+                    <div
+                        class="w-8 h-8 mr-3 inline-flex items-center justify-center rounded-full bg-indigo-500 text-dark flex-shrink-0">
+                        <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                            stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+                            <path d="M22 12h-4l-3 9L9 3l-3 9H2"></path>
+                        </svg>
+                    </div>
+                    <h2 class="text-dark text-lg font-medium text mt-2">MINISHELL</h2>
+                </div>
+                <div class="flex flex-col justify-between flex-grow">
+                    <p class="leading-relaxed text  text-lg text-dark">
+                      Creation of a simplified command shell in C, 
+                      capable of executing builtin commands, no builtin commands and managing pipes, 
+                      redirects and heredocs.
+                    </p>
+                </div>
+            </div>
+        </div>
+    
+        <!-- card 8-->
+        <div class="p-4 max-w-lg kard" >
+          <div class="flex rounded-lg h-full bg-neutral-300 shadow-lg p-8 flex-col" 
+          [ngClass]="darkCardBg()" [@scale]="cardStates['FDF']" 
+          (mouseover)="toggleIn('FDF')" (mouseout)="toggleOut('FDF')">
+            <img class="w-full" src="./assets/fdf.gif" alt="fdf">
+            <div class="flex items-center mb-3 mt-2">
+                    <div
+                        class="w-8 h-8 mr-3 inline-flex items-center justify-center rounded-full bg-indigo-500 text-dark flex-shrink-0">
+                        <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                            stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+                            <path d="M22 12h-4l-3 9L9 3l-3 9H2"></path>
+                        </svg>
+                    </div>
+                    <h2 class="text-dark text-lg font-medium text mt-2">FDF</h2>
+                </div>
+                <div class="flex flex-col justify-between flex-grow">
+                    <p class="leading-relaxed text  text-lg text-dark">
+                      The goal of this C graphics project is to create a 3D wireframe 
+                      representation of a 2D map with the help of a minimal graphics library.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <!-- card 9-->
+        <div class="p-4 max-w-lg kard" >
+          <div class="flex rounded-lg h-full bg-neutral-300 shadow-lg p-8 flex-col" 
+          [ngClass]="darkCardBg()" [@scale]="cardStates['MINITALK']" 
+          (mouseover)="toggleIn('MINITALK')" (mouseout)="toggleOut('MINITALK')">
+            <img class="w-full" src="./assets/minitalk.png" alt="minitalk">
+            <div class="flex items-center mb-3 mt-2">
+                    <div
+                        class="w-8 h-8 mr-3 inline-flex items-center justify-center rounded-full bg-indigo-500 text-dark flex-shrink-0">
+                        <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                            stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+                            <path d="M22 12h-4l-3 9L9 3l-3 9H2"></path>
+                        </svg>
+                    </div>
+                    <h2 class="text-dark text-lg font-medium text mt-2">MINITALK</h2>
+                </div>
+                <div class="flex flex-col justify-between flex-grow">
+                    <p class="leading-relaxed text  text-lg text-dark">
+                      This is a C project that uses interprocess communication via Posix signals. In fact, 
+                      it's a simple client-server communication system implemented using signals in C. 
+                      The client sends a message to the server, and the server receives and displays the message character by character.
+                    </p>
+                </div>
+            </div>
+        </div>
+        </div>
 </div>

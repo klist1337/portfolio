@@ -10,11 +10,24 @@ body.dark-mode {
 }
 
 body.light-mode {
-    background-color: #fdfdfd;
+    background-color: rgb(255,255,255);
     color: #3f4344;
 }
 body , html {
     scroll-behavior: smooth;
+}
+
+@font-face {
+    font-family: 'sofia pro';
+    src: url(./assets/Fonts/sofiapro-light.otf) format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'sofia pro bolder';
+    src:url(./assets/Fonts/Sofia\ Pro\ Bold.ttf) format('truetype');
+    font-weight: bold;
+    font-style: normal;
 }
 
 @tailwind base;

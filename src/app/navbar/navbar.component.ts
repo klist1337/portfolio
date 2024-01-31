@@ -38,6 +38,7 @@ export class NavbarComponent implements OnInit {
       'navbar-light': !this.isDarkMode,
       'bg-light': !this.isDarkMode,
       'navbar-dark': this.isDarkMode,
+      'bg-gray-700': this.isDarkMode,
     }
   }
   scrollToComponent(componentId: string) {

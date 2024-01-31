@@ -1,4 +1,46 @@
-.container {
-    margin-top: 100px;
-    margin-left: 500px;
+.capabilities {
+    font-family: 'sofia pro bolder';
+    font-size: 36px;
+    line-height: 32px;
+    font-weight: 900;
+    opacity: 1;
+    tab-size: 4;
+    visibility: visible;
+    word-spacing: 1px;
+    transform: matrix(1, 0, 0, 1, 0, 0);
+    color: rgb(0, 8, 61);
+}
+.dark-mode .capabilities {
+    color:#198754
+}
+.dev {
+    font-family: 'sofia pro bolder';
+    font-size: 25px;
+    line-height: 32px;
+    font-weight: 900;
+    opacity: 1;
+    tab-size: 4;
+    visibility: visible;
+    word-spacing: 1px;
+    transform: matrix(1, 0, 0, 1, 0, 0);
+    color: rgb(0, 8, 61);
+}
+.dark-mode .dev {
+    color: #198754;
+}
+
+.capability{
+    font-family: 'sofia pro';
+    font-size: 20px;
+    line-height: 32px;
+    opacity: 1;
+    tab-size: 4;
+    visibility: visible;
+    word-spacing: 1px;
+    transform: matrix(1, 0, 0, 1, 0, 0);
+    color: rgb(91, 110, 128);
+}
+
+.dark-mode .capability {
+    color: #ffff;
 }
