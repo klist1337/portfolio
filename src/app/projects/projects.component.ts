@@ -39,15 +39,15 @@ const wideNarrow = trigger('wideNarrow', [
 })
 export class ProjectsComponent implements OnInit{
   cardStates: {[key:string]: string} = {
-    'FT_TRANSCENDANCE': ' normal',
-    'FT_IRC': 'normal',
-    'INCEPTION':'normal',
-    'FT_CONTAINERS': 'normal',
-    'CUB3D': 'normal',
-    'NETPRACTICE':'normal',
-    'MINISHELL': 'normal',
-    'FDF':'normal',
-    'MINITALK': 'normal'
+    'FT_TRANSCENDANCE': 'scaleIn',
+    'FT_IRC': 'scaleIn',
+    'INCEPTION':'scaleIn',
+    'FT_CONTAINERS': 'scaleIn',
+    'CUB3D': 'scaleIn',
+    'NETPRACTICE':'scaleIn',
+    'MINISHELL': 'scaleIn',
+    'FDF':'scaleIn',
+    'MINITALK': 'scaleIn'
   };
   constructor(private darkModeService: DarkModeService) {}
     darkmode$ = this.darkModeService.darkMode$;

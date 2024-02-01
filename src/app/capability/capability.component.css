@@ -30,17 +30,60 @@
 }
 
 .capability{
-    font-family: 'sofia pro';
-    font-size: 20px;
-    line-height: 32px;
-    opacity: 1;
+    font-family: 'sofia pro light';
+    font-size: 18px;
+    line-height: 28px;
+    opacity:1;
     tab-size: 4;
     visibility: visible;
     word-spacing: 1px;
     transform: matrix(1, 0, 0, 1, 0, 0);
     color: rgb(91, 110, 128);
 }
+.tech {
+    font-family: "sofia pro bolder";
+    color: rgb(0, 8, 61)
+}
 
 .dark-mode .capability {
     color: #ffff;
+}
+
+@media (max-width:640px) {
+    .design {
+        margin-left: -80px;
+    }
+    .development{
+        margin-left: -80px ;
+    }
+    .dev {
+        font-size: 20px;
+    }
+    .capability {
+        font-size: 15px;
+    }
+    .emoji1 {
+        margin-right: 70px ;
+    }
+    .emoji2 {
+        margin-right: 40px;
+    }
+}
+
+@media (max-width:450px) {
+    .dev {
+        font-size: 18px;
+    }
+    .capability {
+        font-size: 13px;
+    }
+    .emoji1, .emoji2 {
+        max-width: 40px;
+    }
+    .design {
+        margin-left: -60px;
+    }
+    .development{
+        margin-left: -90px ;
+    }
 }
