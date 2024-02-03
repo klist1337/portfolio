@@ -5,6 +5,7 @@ import { NgModel } from '@angular/forms';
 import { BrowserModule } from '@angular/platform-browser';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { DarkModeService } from 'angular-dark-mode';
+import { ToggleButtonComponent } from '../toggle-button/toggle-button.component';
 
 const scale = trigger('scale', [
   state('scaleIn', style({
@@ -19,7 +20,7 @@ const scale = trigger('scale', [
 @Component({
   selector: 'app-capability',
   standalone: true,
-  imports: [NgClass, NgIf],
+  imports: [NgClass, NgIf, ToggleButtonComponent],
   providers:[BrowserModule, BrowserAnimationsModule],
   templateUrl: './capability.component.html',
   animations:[scale],
@@ -35,10 +36,19 @@ export class CapabilityComponent implements OnInit{
     'prisma':  'scaleIn',
     'postgre':  'scaleIn',
     'figma':  'scaleIn',
+    'c' : 'scaleIn',
+    'c++' : 'scaleIn',
+    'css' : 'scaleIn',
+    'Html' : 'scaleIn',
+    'Js' : 'scaleIn',
+    'Ts' : 'scaleIn',
+    'python' : 'scaleIn',
+    'bash' : 'scaleIn',
+
   };
   isDarkMode = false;
-  change = false;
   darkMode$ = this.darkModeService.darkMode$;
+  checked: boolean = false;
   constructor(private darkModeService:DarkModeService) {}
 
   ngOnInit(): void {
@@ -58,8 +68,5 @@ export class CapabilityComponent implements OnInit{
   }
   toggleOut(cardId:string) {
     this.cardStates[cardId] = 'scaleIn';
-  }
-  onClick() {
-    this.change = !this.change;
   }
 }

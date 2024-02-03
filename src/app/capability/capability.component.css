@@ -48,6 +48,11 @@
 .dark-mode .capability {
     color: #ffff;
 }
+.toggle-button {
+    width: 253px;
+    height: 80px;
+    border-radius: 9999px;
+}
 
 @media (max-width:640px) {
     .design {

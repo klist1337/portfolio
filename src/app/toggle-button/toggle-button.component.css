@@ -1,0 +1,56 @@
+:host {
+    display: block;
+    position: relative;
+    width: 100px;
+    height: 50px;
+  }
+  
+  input[type="checkbox"] {
+    display: none; 
+  }
+
+  
+  .toggle-button-switch {
+    position: absolute;
+    top: 1px;
+    left: 2px;
+    width: 120px;
+    height: 58px;
+    background-image: linear-gradient(90deg,#009bff,#0062ff);
+    opacity:0.7;
+    border-radius: 9999px;
+    cursor: pointer;
+    z-index: 100;
+    transition: left 0.3s;
+  }
+  .dark-mode .toggle-button-switch {
+    background-image: linear-gradient(90deg,#17e887,#198754);
+    border-color: #2be890;
+  }
+
+  .toggle-button-text {
+    overflow: hidden;
+    background-color: #f0f0f0;
+    border-radius: 25px;
+    width: 260px;
+    height: 60px;
+    transition: background-color 0.3s;
+  }
+
+
+  .toggle-button-text-tech,
+  .toggle-button-text-languages {
+    float: left;
+    width: 50%;
+    height: 100%;
+    line-height: 50px;
+    font-size: 19px;
+    font-family: 'sofia pro bolder';
+    font-weight: bold;
+    color: rgb(0, 8, 61);
+    text-align: center;
+  }
+  
+  input[type="checkbox"]:checked ~ .toggle-button-switch {
+    left: 140px;
+  }
