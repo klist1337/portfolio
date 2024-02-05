@@ -13,7 +13,7 @@ const scale = trigger('scale', [
   state('scaleOut', style({
     transform:'scale(1.1)'
   })),
-  transition('scaleIn <=> scaleOut', animate('1s linear'))
+  transition('scaleIn <=> scaleOut', animate('800ms linear'))
 ]);
 const wideNarrow = trigger('wideNarrow', [
   state('wide', style({
