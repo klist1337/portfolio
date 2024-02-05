@@ -1,4 +1,217 @@
-.container {
-    margin-top: 200px;
-    margin-left: 500px;
+.needed {
+    font-family: 'sofia pro bolder';
+    font-size: 36px;
+    line-height: 32px;
+    font-weight: 900;
+    opacity: 1;
+    tab-size: 4;
+    visibility: visible;
+    word-spacing: 1px;
+    transform: matrix(1, 0, 0, 1, 0, 0);
+    color: rgb(0, 8, 61);
+}
+.dark-mode .needed {
+    color: #198754;
+}
+.available {
+    font-family: 'sofia pro';
+    font-size: 24px;
+    line-height: 32px;
+    text-align: left;
+    opacity: 1;
+    tab-size: 4;
+    visibility: visible;
+    word-spacing: 1px;
+    transform: matrix(1, 0, 0, 1, 0, 0);
+    color: rgb(0, 98, 255);
+
+}
+.dark-mode .available {
+    color: #aaaaaa;
+}
+
+.pulse {
+    background-color: rgba(0, 98, 255);
+    width: 10px;
+    height: 10px;
+    display: inline-block;
+    border-radius: 9999px;
+    background-clip: padding-box;
+    vertical-align: middle;
+    box-sizing: border-box;
+    box-shadow:  rgba(0, 98, 255, 0.389) 0px 0px 0px 8.95136px 
+}
+.dark-mode .pulse {
+    background-color: #198754;
+    box-shadow: rgba(3, 253, 11, 0.118) 0px 0px 0px 8.95136px 
+}
+.btn-primary {
+    font-family: 'sofia pro bolder';
+    font-weight: normal;
+    font-size: 18px;
+    tab-size: 4;
+    height: 52px;
+    background-image: linear-gradient(90deg,#009bff,#0062ff);
+    box-shadow: 0 2px 8px 0 rgba(0,34,255,.08),0 2px 8px 0 rgba(0,11,80,.12)
+}
+.dark-mode .btn-primary {
+    background-image: linear-gradient(90deg,#17e887,#198754);
+    border-color: #2be890;
+}
+
+.contact {
+    font-family: 'sofia pro';
+    font-size: 24px;
+    line-height: 32px;
+    opacity: 1;
+    tab-size: 4;
+    visibility: visible;
+    word-spacing: 1px;
+    transform: matrix(1, 0, 0, 1, 0, 0);
+    color: rgb(91, 110, 128);
+}
+.contact:hover {
+    color: #0062ff;
+}
+.dark-mode .contact {
+    color:#aaaaaa
+}
+.copywright {
+    font-family: 'sofia pro';
+    font-size: 18px;
+    line-height: 32px;
+    opacity: 1;
+    tab-size: 4;
+    visibility: visible;
+    word-spacing: 1px;
+    transform: matrix(1, 0, 0, 1, 0, 0);
+    color: rgb(91, 110, 128);
+}
+.dark-mode .contact:hover {
+    color: #198754;
+}
+
+@media (max-width: 2000px) {
+    .info {
+        margin-left: -400px;
+    }
+    .needed {
+        font-size: 32px;
+        margin-right: 10px;
+    }
+    .available {
+        font-size: 22px ;
+    }
+    .contact {
+        font-size: 23px;
+    }
+    .btn-primary {
+        height: 48px;
+        width: 148px;
+        font-size: 13px;
+    }
+}
+
+@media (max-width: 1600px) {
+    .info {
+        margin-left: -600px;
+        margin-right: -100px;
+    }
+    .needed {
+        font-size: 30px;
+        margin-right: 10px;
+    }
+    .available {
+        font-size: 21px ;
+    }
+    .contact {
+        font-size: 22px;
+    }
+    .btn-primary {
+        height: 42px;
+        width: 120px;
+        font-size: 11px;
+    }
+}
+@media (max-width: 1300px) {
+    .info {
+        margin-left: -750px;
+        margin-right: -250px;
+    }
+    .needed {
+        font-size: 28px;
+    }
+    .available {
+        font-size: 20px ;
+    }
+    .contact {
+        font-size: 21px;
+    }
+}
+@media (max-width: 870px) {
+    .info {
+        margin-left: -800px;
+        margin-right: -240px;
+    }
+    .needed {
+        font-size: 22px;
+    }
+    .available {
+        font-size: 16px ;
+    }
+    .contact {
+        font-size: 15px;
+        margin-left: -130px;
+    }
+}
+@media (max-width: 596px) {
+    .info {
+        margin-left: -830px;
+        margin-right: -250px;
+    }
+    .needed {
+        font-size: 18px;
+    }
+    .available {
+        font-size: 12px ;
+    }
+    .contact {
+        font-size: 11px;
+        margin-left: -140px;
+    }
+}
+@media (max-width: 446px) {
+    .info {
+        margin-left: -840px;
+        margin-right: -260px;
+    }
+    .needed {
+        font-size: 17px;
+    }
+    .available {
+        font-size: 11px ;
+    }
+    .contact {
+        font-size: 10px;
+        margin-left: -140px;
+    }
+}
+@media (max-width: 398px) {
+    .info {
+        margin-left: -850px;
+        margin-right: -290px;
+    }
+    .needed {
+        font-size: 15px;
+    }
+    .available {
+        font-size: 10px ;
+    }
+    .contact {
+        font-size: 8px;
+        margin-left: -120px;
+    }
+    .borderline {
+        margin-top: 600px;
+    }
 }

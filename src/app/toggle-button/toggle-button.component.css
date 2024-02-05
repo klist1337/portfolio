@@ -24,7 +24,7 @@
     transition: left 0.3s;
   }
   .dark-mode .toggle-button-switch {
-    background-image: linear-gradient(90deg,#17e887,#198754);
+    background-image: linear-gradient(90deg,#00ff88,#198754);
     border-color: #2be890;
   }
 
