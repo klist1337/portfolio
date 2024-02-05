@@ -21,11 +21,11 @@ export class SmoothScrollDirective {
         const scrolledY = window.scrollY;
         const windowHeight = window.innerHeight;
         //Check if the scrolled to the component from top to bottom
-        if (scrolledY >= componentOffset && scrolledY <= componentOffset + windowHeight)
-          this.route.navigate([this.targetRoute]);
-         //Check if the scrolled to the component from bottom to top
-        if (scrolledY <= componentOffset && scrolledY >= componentOffset - windowHeight)
-          this.route.navigate([this.targetRoute]);
+        // if (scrolledY >= componentOffset && scrolledY <= componentOffset + windowHeight)
+        //   // this.route.navigate([this.targetRoute]);
+        //  //Check if the scrolled to the component from bottom to top
+        // if (scrolledY <= componentOffset && scrolledY >= componentOffset - windowHeight)
+        //   // this.route.navigate([this.targetRoute]);
       }
     }
 

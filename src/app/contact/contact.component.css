@@ -76,6 +76,9 @@
 .dark-mode .contact {
     color:#aaaaaa
 }
+.dark-mode .contact:hover {
+    color: #198754;
+}
 .copywright {
     font-family: 'sofia pro';
     font-size: 18px;
@@ -87,8 +90,8 @@
     transform: matrix(1, 0, 0, 1, 0, 0);
     color: rgb(91, 110, 128);
 }
-.dark-mode .contact:hover {
-    color: #198754;
+.dark-mode .copywright {
+    color:#aaaaaa
 }
 
 @media (max-width: 2000px) {
