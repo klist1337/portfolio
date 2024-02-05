@@ -19,13 +19,13 @@ body , html {
 
 @font-face {
     font-family: 'sofia pro';
-    src: url(./assets/Fonts/sofiapro-light.otf) format('opentype');
+    src: url(./media/sofiapro-light.otf) format('opentype');
     font-weight: normal;
     font-style: normal;
 }
 @font-face {
     font-family: 'sofia pro bolder';
-    src:url(./assets/Fonts/Sofia\ Pro\ Bold.ttf) format('truetype');
+    src:url(./media/Sofia\ Pro\ Bold.ttf) format('truetype');
     font-weight: bold;
     font-style: normal;
 }
