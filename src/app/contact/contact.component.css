@@ -167,6 +167,13 @@
         margin-left: -130px;
     }
 }
+
+@media (max-width:799px) {
+    .borderline {
+        margin-top: -180px;
+    }
+    
+}
 @media (max-width: 596px) {
     .info {
         margin-left: -830px;

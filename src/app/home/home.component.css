@@ -221,6 +221,10 @@
     }
     .btn-primary {
         margin-left: -210px;
+        margin-top: -20px;
+    }
+    .btn-outline-primary {
+        margin-top: -20px;
     }
     .thanking {
         margin-top: 700px;
@@ -234,6 +238,12 @@
     margin-top: 300px;
 }
 
+@media (max-width:1030px) {
+    .thanking {
+        font-size: 18px;
+    } 
+}
+
 @media (max-width: 1000px) {
     .container {
         margin-top: 80px;
@@ -241,17 +251,20 @@
     .text-container, .image-container{
         margin-left: -280%;
     }
-
+   
     .btn-primary {
-        height: 40px;
-        font-size: 14px;
+        margin-top: -20px;
+        height: 50px;
+        font-size: 18px;
+        margin-left: -320px;
     }
     .btn-outline-primary {
-        height: 40px;
-        font-size: 14px;
+        margin-top: -20px;
+        height: 50px;
+        font-size: 18px;
     }
     .thanking {
-        font-size: 18px;
+        font-size: 16px;
     }
     .Logo42 {
         margin-right: 10%;
@@ -297,7 +310,7 @@
 @media (max-width:599px) {
     .thanking {
         margin-top: 100px;
-        font-size: 17px;
+        font-size: 15px;
     }
     .Logo42 {
         margin-right: 2%;
