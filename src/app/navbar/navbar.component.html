@@ -1,4 +1,4 @@
-<nav class="navbar navbar-expand-lg fixed-top" [ngClass]="getNavBarStyles()" aria-label="Main navigation">
+<nav class="navbar navbar-expand-lg fixed-top w-screen" [ngClass]="getNavBarStyles()" aria-label="Main navigation">
     <div class="container-fluid">
       <button (click)="scrollToComponent('Home')">
         <a > <img src="./assets/eassofi.png"  style="width: 60px; margin-left: 10px; margin-right: 15px;" ></a>
@@ -23,7 +23,7 @@
       </div>
     </div>
     <ng-template #responsive>
-      <div class="navbar-collapse offcanvas-collapse" id="navbarsExampleDefault" [ngbCollapse]="isCollapsed" >
+      <div class="navbar-collapse offcanvas-collapse w-screen" id="navbarsExampleDefault" [ngbCollapse]="isCollapsed" >
         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
           <li class="responsive">
             <button><a class="nav-link" (click)="scrollToComponent('Projects')" [class.active]="isActive('/Projects')">Projects</a> </button>
