@@ -168,7 +168,7 @@
     }
 }
 
-@media (max-width:799px) {
+@media (max-width:800px) {
     .borderline {
         margin-top: -180px;
     }
@@ -206,7 +206,7 @@
         margin-left: -140px;
     }
 }
-@media (max-width: 398px) {
+@media (max-width: 414px) {
     .info {
         margin-left: -850px;
         margin-right: -290px;

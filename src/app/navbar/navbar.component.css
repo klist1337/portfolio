@@ -60,3 +60,12 @@
 }
 
 
+@media (max-width: 414px) {
+  .navbar-brand {
+    font-size: 14px;
+    margin-left: 5px;
+  }
+  .nav-link {
+    font-size: 16px;
+  }
+}
